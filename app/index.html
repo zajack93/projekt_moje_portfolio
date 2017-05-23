@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pl">
+<!--<html lang="pl"> -->
+<head>
+	<meta charset="UTF-8">
+	<title> Moje portfolio - Katarzyna Zając </title>
+	
+	
+<!--	google fonts styles-->
+
+<link href="https://fonts.googleapis.com/css?family=Henny+Penny|Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Montserrat+Alternates:400,700|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Share+Tech+Mono&amp;subset=latin-ext" rel="stylesheet">
+			<!--	font-family: 'Henny Penny', cursive;
+			font-family: 'Share Tech Mono', monospace; 
+			font-family: 'Montserrat Alternates', sans-serif;
+			font-family: 'Lato', sans-serif;
+			font-family: 'Roboto', sans-serif;-->
+				
+<!-- Font Awesome Styles -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+<!--	Main styles		-->
+	<link rel="stylesheet" href="css/style.css">
+	
+<!--Responsive styles-->
+	<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<!--menu nawigacyjne start-->
+
+<nav id="main-nav">
+	
+	<label for="drop" class="toggle"> Menu </label>
+	<input type="checkbox" id="drop" />
+
+	<ul>
+	
+		<li class="menu-item"><a href="#main-header"> Home </a></li>
+<!--		wrzucam kotwice czyli hashtag i nazwa id-->
+		<li class="menu-item"><a href="#about"> O mnie </a></li>
+		<li class="menu-item"><a href="#skills"> Umiejętności </a></li>
+		<li class="menu-item"><a href="#portfolio"> Portfolio </a></li>
+		<li class="menu-item"><a href="#contact"> Kontakt </a></li>
+
+	</ul>
+	
+</nav>
+
+
+<!--menu nawigacyjne stop-->
+<!--main-header start-->
+
+<header id="main-header"> 
+	<div class="main-header-content">
+		<h1> Katarzyna <span> Zając </span> </h1>
+		<h2> Front-End Developer</h2>
+	</div>		
+</header>
+
+
+<!--main-header stop-->
+
+<!--section about section start-->
+
+<section id="about">
+	<h2> O <span> mnie </span></h2>
+	<figure class="about-image"><img src="img/ja.jpg" alt="jan nowak"></figure>
+		
+	
+	<article class="about-content">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at dui eget justo congue placerat ultrices eget nibh. Vestibulum convallis consectetur eros, et interdum purus rhoncus eu. Donec felis odio, varius porta rutrum ac, sagittis vel metus. Curabitur auctor massa quis libero ultrices pretium. Pellentesque pharetra nulla ligula, sit amet pulvinar dolor lobortis quis. Phasellus eleifend mauris ut enim sagittis, eu imperdiet nisl suscipit. Fusce nec bibendum orci. Aenean ultrices velit hendrerit nunc tempus ornare. Nullam eget eleifend nisl. Proin facilisis a ex aliquet fermentum. Suspendisse eu lectus convallis, pretium turpis sit amet, lobortis quam. Vivamus at lacinia mauris.
+		</p>
+	</article>
+</section>
+
+<!--section about me stop-->
+
+<!--section skills start-->
+<section id="skills">
+	<h2> Moje <span> umiejętności </span></h2>
+	<article class="skills-content">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime at fugit, iste excepturi obcaecati placeat dicta, consectetur ipsa vero. Pariatur odit libero sapiente sequi, id dolorum nostrum distinctio laboriosam neque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, nisi laboriosam fugiat consequatur expedita quasi corporis, modi, quas commodi iusto quia illo dicta placeat doloribus veritatis perferendis ex ipsa laborum. 
+		</p>
+	</article>
+	<div id="skills-icons">
+		<figure> 
+			<img src="icons/css3.png" alt="css3">
+			<figcaption> CSS3 </figcaption>
+		</figure>
+		<figure>
+			<img src="icons/html5.png" alt="html5">
+			<figcaption> HTML 5</figcaption>
+		</figure>
+		<figure>
+			<img src="icons/jquery.png" alt="jquery">
+			<figcaption>JQuery</figcaption>
+		</figure>
+		<figure>
+			<img src="icons/js.png" alt="javascript">
+			<figcaption> JavaScript </figcaption>
+		</figure>
+	</div>
+	
+</section>
+
+<!--section skills stop-->
+
+<section id="portfolio">
+	<h2> Moje <span> portfolio </span></h2>
+	
+	<div id="portfolio-images">
+	
+		<div id="single-img-1" class="single-portfolio-image">
+			<div class="single-portfolio-image-mask">
+				<div class="single-portfolio-item-mask-border"> 
+					<div class="portfolio-item-content">
+						<h2> Lorem ipsum1 </h2>
+							<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In efficitur, felis id rhoncus bibendum, diam felis semper felis, sed ultrices eros orci id elit. Donec eget posuere justo, ac consectetur sem. Quisque dictum, ligula eget rutrum tincidunt, velit eros bibendum justo, pharetra ultricies sapien nibh vitae justo.  
+							</p>
+						<h3>Wykorzystane technologie</h3>
+							<p> HTML5, CSS3, JQuery, JavaScript <br />
+							<a href=""> <i class="fa fa-link fa-2x"></i></a>
+							</p>
+					</div> 
+				</div>
+			</div>
+		</div>
+		
+		<div id="single-img-2" class="single-portfolio-image">
+			<div class="single-portfolio-image-mask">
+				<div class="single-portfolio-item-mask-border"> 
+						<div class="portfolio-item-content">
+							<h2> Lorem ipsum2 </h2>
+								<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In efficitur, felis id rhoncus bibendum, diam felis semper felis, sed ultrices eros orci id elit. Donec eget posuere justo, ac consectetur sem. Quisque dictum, ligula eget rutrum tincidunt.
+								</p>
+							<h3>Wykorzystane technologie</h3>
+								<p> HTML5, CSS3, JQuery, JavaScript <br />
+								<a href=""> <i class="fa fa-link fa-2x"></i></a>
+								</p>
+						</div> 
+				</div>
+			</div>
+		</div>
+		
+		<div id="single-img-3" class="single-portfolio-image">
+			<div class="single-portfolio-image-mask">
+				<div class="single-portfolio-item-mask-border"> 
+					<div class="portfolio-item-content">
+						<h2> Lorem ipsum3 </h2>
+							<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In efficitur, felis id rhoncus bibendum, diam felis semper felis, sed ultrices eros orci id elit. Donec eget posuere justo, ac consectetur sem. Quisque dictum, ligula eget rutrum tincidunt, velit eros bibendum justo.
+							</p>
+						<h3>Wykorzystane technologie</h3>
+							<p> HTML5, CSS3, JQuery, JavaScript <br />
+							<a href=""> <i class="fa fa-link fa-2x"></i></a>
+							</p>
+					</div> 
+				</div>
+			</div>
+		</div>
+	
+	</div>
+	
+	
+</section>
+
+
+<section id="contact">
+	<div class="contact-info">
+		<h9> Katarzyna <span> Zając </span></h9> <br />
+		<address>
+			ul. Fredry 11 <br /> 
+			32-545 Dulowa <br /> <br />
+
+			tel: +48 792-675-245  <br /> 
+			e-mail: <a href="mailto:zajack93@gmail.com"> zajack93@gmail.com </a> <br />
+		</address>
+		<br /> <br />
+		
+	  	<div class="list-group">
+			<a class="list-group-item" href="#"><i class="fa fa-home "></i>&nbsp; </a>
+		 	<a class="list-group-item" href="https://github.com/zajack93"><i class="fa fa-github "></i>&nbsp; </a>
+		 	<a class="list-group-item" href="https://www.facebook.com"><i class="fa fa-facebook "></i>&nbsp; </a>
+		 	<a class="list-group-item" href="#"><i class="fa fa-refresh "></i>&nbsp; </a>
+		</div>
+
+	</div>
+
+	<div class="message">
+		<form action="https://formspree.io/zajack93@gmail.com" method="post">
+		<br /> <br />
+			<label for="name"> Imię i Nazwisko: </label> <br />
+			<input type="text" id="name" name="imie" value="" placeholder="Imię i nazwisko" >
+			 <br /> 
+
+			<label for="email"> email </label> <br />
+			<input type="text" id="email" name="email" value="" placeholder="e-mail">
+			 <br /> 
+
+			<label for="wiadomosc"> Wiadomość </label>	<br />
+			<textarea name="message" id="wiadomosc" placeholder="Treść wiadomości"></textarea>
+			<br />
+
+			<input type="submit" id="submit"  value="Wyślij">
+		</form>
+	</div>
+</section>
+	
+<footer id="make">
+	<p>Created by @Kasia </p>
+</footer>
+
+<script src="js/jquery-3.1.1.min.js"></script>
+
+<script src="js/smoothScroll.js"></script>
+
+
+	
+</body>
+</html>

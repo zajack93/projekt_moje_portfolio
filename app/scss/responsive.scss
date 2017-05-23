@@ -1,0 +1,183 @@
+/*<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Responsive start !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->*/
+
+@media all and (max-width: 1200px) {
+	
+	/*	************************ Section about portfolio start *****************************/
+	#portfolio #portfolio-images .single-portfolio-image {
+		width: 50%;
+	}
+	#portfolio #portfolio-images .single-portfolio-image:last-child {
+		width: 100%;
+	}
+	/*	************************ Section about portfolio stop *****************************/
+	
+	/*	************************ Section about contact start *****************************/
+	#contact .message #submit {
+		position: absolute; 
+		right: 17%;
+	}
+	/*	************************ Section about contact stop *****************************/
+}
+
+@media all and (max-width: 768px) {
+	#main-nav .toggle {
+		display:block;
+		color: #1ac056;
+		padding: 0 20px;
+		font-size: 20px;
+		line-height: 60px;
+		text-decoration: none;
+		border: none;
+		text-align: right;
+	} 	
+	
+	#main-nav ul {
+		display: none;
+		width: 100%;
+		padding: 0;
+	}
+	
+	#main-nav #drop:checked + ul {
+		display: block;	
+	}
+	
+    #main-nav ul li {
+        display: block;
+        width: 100%;
+		text-align: right;
+		padding: 20px 20px;
+        border-top: 1px solid white;
+    }
+	
+/*	**************** Header style responsive start *************/
+	#main-header .main-header-content {
+		text-align: center;
+		padding: 30%;
+	/*	rozpycham jednostkami relatywnymi żeby mi się ten obrazek skalował */
+	}
+	
+	#main-header .main-header-content h1 {
+		font-size: 3.5em;
+
+	}
+
+	#main-header .main-header-content h2 {
+		font-size: 1.5em;
+	}
+	/*	**************** Header style responsive stop *************/
+	
+	/*	**************** Section about responsive start *************/
+		#about > figure  {
+	/*		inherit = domyslna */
+			width: 100%;
+		/*	obrazek jako wlasciwosc liniowa dodajemy text-align:centre, jezeli byloby obrazek obeazek, to*/
+		}
+		#about > figure > img {
+			max-height: inherit;
+		}
+		#about > article {
+			width: 100%;
+		}
+
+/*	**************** Section about responsive stop *************************************/
+	
+	/*	************************ Section about portfolio start *****************************/
+		#portfolio #portfolio-images .single-portfolio-image {
+			width: 100%;
+		}
+	
+	/*	************************ Section about portfolio stop *****************************/
+	
+	/*	************************ Section about contact start *****************************/
+		#contact, #contact .contact-info {
+			text-align: center;
+	}
+	
+		#contact .contact-info {
+			width: 100%;
+	}
+		#contact .message {
+			width: 100%;
+	}
+		#contact .message #submit {
+			position: absolute; 
+			right: 20%;
+	}
+		#contact .contact-info .list-group a {
+			margin-right: 0;
+			border: 1px solid #fff;
+			color: #fff;
+			text-align: center;
+			font-size: 22px;
+	}
+
+	
+	/*	************************ Section about contact stop *****************************/
+	
+	
+}
+
+@media all and (max-width: 680px) {
+	
+	/*	**************** Header style responsive start *************/
+	#main-header .main-header-content h1 {
+		font-size: 3em;
+
+	}
+
+	#main-header .main-header-content h2 {
+		font-size: 1.5em;
+	}
+	
+	/*	**************** Header style responsive stop *************/
+	
+	/*	**************** Section about responsive start *************/
+	
+	#about > article >p {
+		font-size: 1em;
+	/*	szerokosc czcionki i wysokość jednej linii jakby interlinia*/
+	}
+	
+	
+	/*	**************** Section about responsive stop *************/
+	
+	section {
+		padding: 0 40px 50px;
+	}
+}
+
+@media all and (max-width: 480px) {
+	
+	/*	**************** Header style responsive start *************/
+	#main-header .main-header-content {
+		text-align: center;
+		padding: 10%;
+	/*	rozpycham jednostkami relatywnymi żeby mi się ten obrazek skalował */
+	}
+	
+	#main-header .main-header-content h1 {
+		font-size: 2em;
+
+	}
+
+	#main-header .main-header-content h2 {
+		font-size: 1em;
+	}
+	
+	/*	**************** Header style responsive stop *************/
+/*	*********************************************************************************************************************************/
+	/*	**************** Section about responsive start *************/
+	
+	#about > article >p {
+		font-size: 1em;
+	/*	szerokosc czcionki i wysokość jednej linii jakby interlinia*/
+	}
+	
+	/*	**************** Section about responsive stop *************/
+	
+	section {
+		padding: 0 10px 30px;
+	}
+}
+
+/*<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Responsive stop !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->*/

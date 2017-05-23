@@ -1,0 +1,27 @@
+@mixin mainFont{
+	
+	font-family: 'Lato', sans-serif;
+	color: #291f1a;
+	margin: 0px;
+	
+}
+
+@mixin sectionStyle {
+	
+	padding: 0 80px 100px;
+	width: 100%;
+	background-color: #f9fcfe;
+}
+
+@mixin paragraph {
+	
+	font-weight: 300;
+	line-height: 25px;
+}
+
+@mixin h2style {
+	font-size: 30px; 
+	font-weight: 300;
+	margin-top: 60px;
+	margin-bottom: 35px;
+}

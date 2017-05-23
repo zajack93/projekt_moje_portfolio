@@ -1,0 +1,573 @@
+@import "mixin";
+@import "zmienne";
+
+/*
+			font-family: 'Henny Penny', cursive;
+			font-family: 'Share Tech Mono', monospace; 
+			font-family: 'Montserrat Alternates', sans-serif;
+			font-family: 'Lato', sans-serif;
+			font-family: 'Roboto', sans-serif;
+*/
+
+* {
+	box-sizing: border-box;
+}
+/*nasza szerokosc jest mierzona razem z paddingiem*/
+body {
+	
+	@include mainFont;
+}
+
+span {
+	color: $spanColor;
+	font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-align: center;
+
+}
+section {
+	
+	@include sectionStyle;
+}
+
+section > h2 {
+	@include h2style;
+}
+
+p {
+	@include paragraph;
+}
+
+/*Main menu styles*/
+#main-nav {
+	width:  100%;
+	position:fixed;
+	background-color: #fff;
+	top: 0;
+	right: 0;
+	color: #1ac056;	
+}
+
+#main-nav >ul {
+	float: right;
+	margin: 0;
+	
+}
+
+#main-nav>ul>li {
+	display: inline-block;
+	padding: 20px 40px;
+	list-style-type: none;
+	font-weight: 300;
+	
+}
+
+#main-nav>ul>li > a {
+	color: #1ac056;
+	text-decoration: none;
+	font-weight: 300;
+}
+
+
+#main-nav>ul>li > a:hover {
+	color: #291f1a;
+}
+
+#main-nav .toggle, #drop {
+	display:none;
+}
+
+/* Header styles*/
+
+#main-header {
+	background-image: url(../img/header-background.jpg);
+	background-size: cover;
+/*	cover - pokrywa całą wysokość i szerokość kontenera */
+	background-position: center;
+/*	jest wycentrowane żeby przez cover nie uciąć gdzieś */
+	background-repeat: no-repeat;
+	color: #fff;
+}
+
+#main-header .main-header-content {
+	text-align: center;
+	padding: 30vh;
+/*	rozpycham jednostkami relatywnymi żeby mi się ten obrazek skalował */
+}
+
+#main-header .main-header-content h1 {
+	font-size: 4em;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 200;
+
+}
+
+#main-header .main-header-content h2 {
+	font-size: 2em;
+	font-weight: 100;
+
+}
+
+/* Header styles stooooooooooooooooop */
+
+
+/*section about *********************************************************************/
+
+#about {
+	background-color: #f9fcfe;
+	overflow: hidden;
+/*	hidden - sekcja ma rozmiar calosci rozciaga sie*/
+}
+#about > figure  {
+	width: 50%;
+	margin: 0;
+	float: left;
+	text-align: center;
+/*	obrazek jako wlasciwosc liniowa dodajemy text-align:centre, jezeli byloby obrazek obeazek, to*/
+}
+#about > article {
+	width: 50%;
+	float: left;
+}
+
+#about > article >p {
+	font-weight: 300;
+	line-height: 25px;
+/*	szerokosc czcionki i wysokość jednej linii jakby interlinia*/
+}
+
+#about > figure > img {
+/*	box-sizing: content-box;*/
+	max-height: 350px;	
+	max-width: 100%;
+    border: 14px solid #fff;
+	border-radius: 15%;	
+/*	background-image*/
+}
+
+/*section about  stop*/
+
+/*section skills start */
+
+#skills > p {
+	text-align: center;
+}
+
+#skills div#skills-icons{
+	text-align: center;
+}
+
+#skills #skills-icons figure {
+	display: inline-block;
+	margin: 40px;
+
+}
+
+#skills #skills-icons figure img {
+	margin-bottom: 15px;
+}
+
+/*	************************ Section about contact start *****************************/
+#contact {
+	color:#fff;
+	background-color: #213b50;
+/*	overflow: hidden;*/
+	text-decoration: none;
+/*	position: relative;*/
+	line-height: 25px;
+	width: 100%;
+/*	height: 100%;*/
+
+}
+#contact .contact-info {
+	width: 50%;
+	margin: 0;
+	float: left;
+	text-align: left;
+	text-decoration: none;
+	font-weight: 300;
+	line-height: 25px;
+	overflow: hidden;
+}
+
+#contact .contact-info h9 {
+	font-weight: 400;
+	line-height: 125px;
+	font-size: 40px;
+	text-decoration: none;
+}
+
+#contact .contact-info address {
+	font-style: normal; 
+}
+#contact .contact-info a {
+	color: #1ac056;
+	text-decoration: none; 
+	top: 0px;
+	bottom:0px;
+	font-size: 20px;
+}
+
+#contact .contact-info .list-group a {
+	height: 38px;
+    width: 38px;
+	margin-right: 30px;
+	color: white;
+	text-decoration: none; 
+	display: inline-block;
+	border: 1px solid #fff;
+	color: #fff;
+	text-align: center;
+	font-size: 22px;
+}
+
+#contact .contact-info .list-group a:hover {
+	color: #213b50;
+    background-color: #fff;
+    border: 1px solid #213b50;
+	
+}
+#contact .message {
+/*	position: absolute;*/
+	top: 20px;
+/*	right: 1%;*/
+	width: 50%;
+	line-height: 30px;
+	margin-top: 25px;
+	overflow: hidden;
+	font-family: 'Lato', sans-serif;
+}
+
+#contact .message  #name{
+	text-align:left;
+	background-color:  #4e708c;
+	color: #fff;
+	border: 40px;
+	width: 80%;
+	height: 30px;
+}
+
+#contact .message #email{
+	text-align: left;
+	background-color:  #4e708c;
+	color: #fff;
+	border: 40px;
+	width: 80%;
+	height: 30px;
+}
+
+#contact .message #wiadomosc{
+	background-color:  #4e708c;
+	color: #fff;
+	width: 80%;
+	height: 70px;
+	border: 40px;
+	overflow: auto;
+	font-family: 'Lato', sans-serif;
+	
+}
+
+
+
+#contact .message #submit {
+	position: absolute; 
+	right: 15%;
+	background-color: #426684;
+    width: auto;
+    padding: 15px 30px;
+    float: right;
+    text-transform: uppercase;
+    border: 1px solid #1ac056;
+    background-color: #1ac056;
+    color: #fff;
+    font-weight: 600; 
+}
+
+/*	************************ Section about contact stop *****************************/
+
+/*	************************ Section footer start *****************************/
+footer#make p {
+//	margin-top=0px;
+	left: 30%;
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: #142634;
+	color: #fff;
+	padding: 5px;
+	font-style: italic;
+	font-size: 15px;
+}
+
+/*	************************ Section about footer stop *****************************/
+
+/*	************************ Section about portfolio start *****************************/
+
+#portfolio #portfolio-images {
+	width: 100%;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	font-size: 0;
+/*	dodajemy font-size=0 zeby usunąc "spacje" pomiedzy obrazkami zemy zmiescily sie w jednej linii , biały znak jest napisany czcionka ktorej nie ma*/
+}
+
+#portfolio #portfolio-images {
+	width: 100%;
+	font-size: 0;
+	text-align: center;
+}
+
+#portfolio #portfolio-images [id="single-img-1"] {
+	background-image: url("../img/portfolio1.jpg");
+}
+#portfolio #portfolio-images [id="single-img-2"] {
+	background-image: url("../img/portfolio2.jpg");
+}
+#portfolio #portfolio-images [id="single-img-3"] {
+	background-image: url("../img/portfolio4.jpg");
+}
+
+#portfolio #portfolio-images .single-portfolio-image {
+	display: inline-block;
+	width: 33.3333%;
+	font-size: initial;
+	height: 350px;
+/*	float: left;*/
+	position: relative;
+	background-size: cover;
+	background-position: center;
+	
+}
+
+#portfolio #portfolio-images .single-portfolio-image .single-portfolio-image-mask {
+	background-color: rgba(33,59,80,0.8);
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	position: absolute;
+	color: white;
+	transition: all 0.5s linear;
+}
+
+#portfolio #portfolio-images .single-portfolio-image .single-portfolio-image-mask:hover {
+	opacity: 1;
+}
+
+#portfolio #portfolio-images .single-portfolio-image .single-portfolio-image-mask .single-portfolio-item-mask-border {
+	border: 1px solid #fff;
+	margin: 10px;
+	height: 330px;
+	position: absolute;
+	
+}
+#portfolio #portfolio-images .single-portfolio-image .single-portfolio-image-mask .single-portfolio-item-mask-border .portfolio-item-content {
+	
+	font-size: initial;
+    text-align: center;
+    color: #fff;
+    top: 50%;
+/*	position: absolute;*/
+/*    transform: translateY(-50%);*/
+	padding: 5px;
+	left: 0;
+	right: 0;
+}
+#portfolio #portfolio-images .single-portfolio-image .single-portfolio-image-mask .single-portfolio-item-mask-border .portfolio-item-content h2 {
+	margin: 0px;
+}
+
+#portfolio #portfolio-images .single-portfolio-image .single-portfolio-image-mask .single-portfolio-item-mask-border .portfolio-item-content a {
+	color: #fff;
+}
+
+/*	************************ Section about portfolio stop *****************************/
+/*
+#portfolio #portfolio-images #single-img-1 {
+	background-image: url("../img/portfolio1.jpg");
+	margin: 0px;
+	height: 350px;	
+	width: 33.3333%;
+	display: inline-block;	
+	position: relative;
+}
+
+#portfolio #portfolio-images #single-img-1 #single-image-mask1:hover {
+	position: absolute;
+	top: 0px;
+	margin: 0px;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	background-color: #335980;
+
+	opacity:0.7;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 25px;
+	color: #fff;
+	transition: all 0.5s ease-in-out;
+	   
+}
+*/
+/*
+#portfolio #portfolio-images #single-img-1 #single-image-mask1 .single-portfolio-item-mask-border .portfolio-item-content h3 a {
+	color:white;
+}
+
+*/
+
+/*
+
+#portfolio #portfolio-images #single-img-1 #single-image-mask1 .single-portfolio-item-mask-border:hover {
+
+	border: 1px solid #fff;
+	margin: 10px;
+	height: 330px;
+	position: absolute;
+}
+
+#portfolio #portfolio-images #single-img-2 {
+	position: absolute;
+	left: 33.3333%;
+	margin: 0px;
+	height: 350px;	
+	width: 33.3333%;
+	background-image: url("../img/portfolio2.jpg");
+	display: inline-block;
+	
+}
+
+#portfolio #portfolio-images #single-img-2 #single-image-mask2:hover {
+	position: absolute;
+	top: 0px;
+	margin: 0px;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	background-color: #213b50;
+	opacity:0.7;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 25px;
+	color: #fff;
+	transition: all 0.5s ease-in-out;
+	
+	   
+}
+
+#portfolio #portfolio-images #single-img-2 #single-image-mask2 .single-portfolio-item-mask-border2:hover {
+	border: 1px solid #fff;
+	margin: 10px;
+	height: 330px;
+	position: absolute;
+}
+
+#portfolio #portfolio-images #single-img-3 {
+	position: absolute;
+	right: 0;
+	margin: 0px;
+	height: 350px;	
+	width: 33.3333%;
+	background-image: url("../img/portfolio4.jpg");
+	display: inline-block;
+
+}
+
+#portfolio #portfolio-images #single-img-3 #single-image-mask3:hover {
+	position: absolute;
+	top: 0px;
+	margin: 0px;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	background-color: #213b50;
+	opacity:0.7;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 25px;
+	color: #fff;
+	transition: all 0.5s ease-in-out;
+
+}
+
+#portfolio #portfolio-images #single-img-3 #single-image-mask3 .single-portfolio-item-mask-border3:hover {
+	border: 1px solid #fff;
+	margin: 10px;
+	height: 330px;
+	position: absolute;
+}
+*/
+
+
+
+
+/*
+#skills {
+	text-align: center;
+	margin: 0;
+	width:  100%;
+	top: 0;
+	right: 0;
+}
+
+#skills div figure {
+	display: inline-block;
+	padding: 20px 40px;
+	margin: 0px;
+	margin-bottom: 10px;
+}
+#skills #skills-icons figure {
+	margin-bottom: 15px;
+}
+
+figure figcaption{
+	top: 10px;
+	text-align: center;
+}
+*/
+/*section skills stop */
+/*
+
+@media (min-width:480px) and (max-width:639px)  {
+	body {
+		font-size: 24px;
+	}
+}
+
+@media  (max-width:479px)  {
+	body {
+		font-size: 228px;
+	}
+*/
+
+/*
+#about .about-content {
+	float: right;
+}
+*/
+
+/*
+#main-header > .main-header-content {
+
+	font-family: 'Roboto', sans-serif;
+	background-image: url(../img/header-background.jpg);
+	background-position: cover;
+	background-position: center;
+	text-align: center;
+	color: #fff;
+	padding: 30vh;
+	
+}
+
+#main-header > .main-header-content > h1{
+	font-family: 'Roboto', sans-serif;
+	
+}
+*/
